@@ -1,0 +1,25 @@
+.navbar {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 1000; /* Ajusta el índice Z para asegurarte de que la barra de navegación esté sobre el contenido */
+	opacity: 0.8;
+  }
+  
+.nav-link, .dropdown-item{
+	font-family: 'allenoire-font'!important;
+	color:white!important;
+}
+.dropdown-item:hover{
+	background-color: var(--color-principal);
+	color:black!important;
+}
+.nav-bar-logo{
+	width:10rem; 
+	height:10rem;
+	border-radius:50%
+}
+.dropdown-menu-custom {
+	width: 100%; /* Establece el ancho del menú desplegable al 100% */
+	margin-top: 0; /* Ajusta el margen superior según sea necesario */
+  }

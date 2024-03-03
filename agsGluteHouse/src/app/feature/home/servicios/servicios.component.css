@@ -1,0 +1,65 @@
+/*---------------------
+  Services
+-----------------------*/
+.p-70 {
+	padding-top: 20px;
+}
+.section-title{
+	margin-bottom: 20px;
+}
+
+.services-section {
+	display: grid;
+	grid-row: 4 ;
+	background: var(--color-principal);
+	padding: 20px;
+}
+
+.single-service {
+	text-align: center;
+}
+
+.single-service img {
+	width: 25%;
+	margin-bottom: 20px;
+}
+
+.single-service h5 {
+	color: #fff;
+	font-size: 18px;
+	font-weight: 700;
+	letter-spacing: 1.5px;
+	text-transform: uppercase;
+	margin-bottom: 22px;
+}
+
+.single-service p {
+	color:#212529;
+	font-size: 14.5px;
+	font-weight: 400;
+	line-height: 1.2rem !important
+}
+
+.service-btn{
+	border-radius: 15px;
+	background-color: var(--color-letras);
+	color: #FFF;
+	font-family: "Allenoire Free Personal";
+	width: 17%;
+}
+.service-btn:hover{	
+	background-color: var(--color-secundario);
+}
+.contenedor-servicio{
+	margin-top: 10px;
+	align-items: center;
+	display: grid;
+	justify-content: center;
+}
+/* Para bajas resoulciones*/
+@media (max-width: 768px) {
+	.service-btn{
+		padding: 5px;
+		width: 65%;
+	}
+}
