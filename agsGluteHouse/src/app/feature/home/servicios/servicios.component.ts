@@ -1,13 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ServicioMockService } from '../../../shared/data/servicio-mock.service';
-import { NavBarComponent } from '../shared/nav-bar/nav-bar.component';
 @Component({
   selector: 'app-servicios',
   standalone: true,
   imports: [
-    CommonModule,
-    NavBarComponent
+    CommonModule
   ],
   templateUrl: './servicios.component.html',
   styleUrl: './servicios.component.css'

@@ -7,7 +7,8 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "serve:ssr:agsGluteHouse": "node dist/ags-glute-house/server/server.mjs"
+    "serve:ssr:agsGluteHouse": "node dist/ags-glute-house/server/server.mjs",
+    "sonar": "sonar-scanner"
   },
   "private": true,
   "dependencies": {
@@ -42,6 +43,7 @@
     "karma-coverage": "~2.2.0",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
+    "sonarqube-scanner": "^3.3.0",
     "typescript": "~5.2.2"
   }
 }

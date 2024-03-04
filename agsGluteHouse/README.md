@@ -30,4 +30,9 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 Instalar bootstrap y jquery
  * npm install bootstrap
  * npm install jquery popper.js
+ * npm install sonarqube-scanner --save-dev
 
+
+Versiones y dependencias
+* Node : v20.11.1
+* Angular CLI: 17.2.2

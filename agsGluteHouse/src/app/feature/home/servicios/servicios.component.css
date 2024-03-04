@@ -1,6 +1,9 @@
 /*---------------------
   Services
 -----------------------*/
+#servicios-section{
+	padding: 50px;
+}
 .p-70 {
 	padding-top: 20px;
 }

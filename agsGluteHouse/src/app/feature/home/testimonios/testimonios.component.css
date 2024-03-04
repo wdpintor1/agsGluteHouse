@@ -1,0 +1,78 @@
+  .contenedor-testimonios {
+    padding: 20px;
+    margin: 8px; /* Espaciado entre los contenedores */
+    background-color: #FFFFFF;
+    box-shadow: 0 3px 13px 1px rgb(0 0 0 / 9%);
+    border-radius: 15px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 300px; /* Ancho máximo de cada contenedor */
+  }
+  .imagen-testimonio{
+    border-radius: 50%;
+    width: 12rem; /* Hace que la imagen ocupe el 100% del ancho del contenedor */
+    height: 12rem; /* Mantiene la proporción de la imagen */
+    display: block; /* Elimina el espacio adicional debajo de la imagen */
+    margin: 0 auto; /* Centra la imagen horizontalmente */
+  }
+  .contenedor-texto-testimonio{
+    text-align: center;
+    font-family: 'Acumin Pro', sans-serif;
+    font-weight: 400;
+    line-height: 1.5rem;
+    padding: 10px;
+    width: 100%;
+  }
+  .contenedor-texto-testimonio p{
+    font-size: 14.5px;
+      font-weight: 400;
+    line-height: 1.2rem !important;
+  }
+  .nombre-testimonio{
+    font-family: "Allenoire Free Personal";
+    font-size: 1.5rem;
+  }
+  
+  .cargo-testimonio{
+    font-family: "Allenoire Free Personal";
+    font-size: 0.8rem;
+  }
+  
+  .texto-testimonio{
+    margin-top: 10px;
+    text-align: justify;
+  }
+  
+  /* Para bajas resoulciones*/
+  @media (max-width: 768px) {
+    /* Estilos específicos para pantallas pequeñas */
+    .contenedor-testimonios {
+      display: block;
+      align-items: flex-start;
+      text-align: center;
+      padding: 20px;
+      font-family: 'Acumin Pro', sans-serif;
+      font-weight: 400;
+      line-height: 1.5rem;
+      width: 80%;
+    }
+    .contenedor-texto-testimonio {
+      display: inline;
+      margin-top: 10px; /* Ajusta según sea necesario */
+    }
+    .imagen-testimonio{
+      border-radius: 50%;
+      width: 250px; /* Hace que la imagen ocupe el 100% del ancho del contenedor */
+      height: 250px; /* Mantiene la proporción de la imagen */
+      display: block; /* Elimina el espacio adicional debajo de la imagen */
+      margin: 0 auto;
+    }
+  }
+  
+  /* Para dispositivos pequeños */
+  @media (max-width: 576px) {
+    .contenedor-testimonios {
+      width: 100%; /* Ancho máximo de cada contenedor */
+      max-width: none; /* Ancho máximo de cada contenedor */
+    }
+  }

@@ -1,0 +1,16 @@
+
+<div id="testimonios-section" class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-3 col-sm-6" *ngFor="let testimonio of testimonios">
+        <div class="contenedor-testimonios">
+          <img class="imagen-testimonio" [src]="'../../../assets/images/logo.png'" alt="logo" />
+          <div class="contenedor-texto-testimonio">
+            <h2>{{ testimonio.nombre }}</h2>
+            <p class="cargo-testimonio">{{ testimonio.cargo }} en</p>
+            <p class="letraWild"> Ag's glutehouse</p> 
+            <p class="texto-testimonio">{{testimonio.testimonio }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

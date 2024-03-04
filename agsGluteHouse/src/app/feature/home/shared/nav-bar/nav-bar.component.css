@@ -2,9 +2,9 @@
 	position: fixed;
 	top: 0;
 	width: 100%;
-	z-index: 1000; /* Ajusta el índice Z para asegurarte de que la barra de navegación esté sobre el contenido */
-	opacity: 0.8;
-  }
+	z-index: 1000; /* Ajusta el índice Z para asegurarte de que la barra de navegación esté sobre el contenido */	
+	background-color: rgba(0, 0, 0, 0.5)!important; /* Fondo con opacidad */
+}
   
 .nav-link, .dropdown-item{
 	font-family: 'allenoire-font'!important;
@@ -23,3 +23,4 @@
 	width: 100%; /* Establece el ancho del menú desplegable al 100% */
 	margin-top: 0; /* Ajusta el margen superior según sea necesario */
   }
+  
