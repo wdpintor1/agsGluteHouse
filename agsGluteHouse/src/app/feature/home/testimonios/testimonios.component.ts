@@ -1,6 +1,8 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef, ViewChild, Renderer2 } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { TestimonioMockService } from '../../../shared/data/testimonio-mock.service';
+
+
 @Component({
   selector: 'app-testimonios',
   standalone: true,
@@ -11,11 +13,35 @@ import { TestimonioMockService } from '../../../shared/data/testimonio-mock.serv
   styleUrl: './testimonios.component.css'
 })
 export class TestimoniosComponent {
-
-  constructor(private testimoniosMockService: TestimonioMockService) { }
+  @ViewChild('testimoniosSection', { static: true }) testimoniosSection?: ElementRef;
+  constructor(private testimoniosMockService: TestimonioMockService, private readonly renderer: Renderer2) { }
   testimonios: any[] = [];
   ngOnInit(): void {
     this.getTestimoniosData();
+    const options = {
+      root: null,
+      rootMargin: '0px',
+      threshold: 0.5
+    };
+    /*if ('IntersectionObserver' in window) {
+      const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            this.activarAnimacion();
+            observer.unobserve(entry.target);
+          }
+        });
+      }, options);
+  
+      this.testimoniosSection && observer.observe(this.testimoniosSection.nativeElement);
+    }*/
+  }
+  activarAnimacion() {
+    // Verifica si testimoniosSection está definida
+    if (this.testimoniosSection) {
+      // Aquí puedes agregar tu lógica para activar la animación
+      this.renderer.addClass(this.testimoniosSection.nativeElement, 'tu-clase-de-animacion');
+    }
   }
   getTestimoniosData() {
     this.testimoniosMockService.getTestimonios().then(respuesta => {

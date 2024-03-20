@@ -1,17 +1,22 @@
+#testimonios-section{
+  background-color: var(--color-secundario);
+  margin:0 !important;
+  padding: 0!important;
+  width: 100% !important;
+}
   .contenedor-testimonios {
     padding: 20px;
-    margin: 8px; /* Espaciado entre los contenedores */
+    margin: 20px; /* Espaciado entre los contenedores */
     background-color: #FFFFFF;
     box-shadow: 0 3px 13px 1px rgb(0 0 0 / 9%);
     border-radius: 15px;
     overflow: hidden;
     text-overflow: ellipsis;
-    max-width: 300px; /* Ancho máximo de cada contenedor */
   }
   .imagen-testimonio{
     border-radius: 50%;
-    width: 12rem; /* Hace que la imagen ocupe el 100% del ancho del contenedor */
-    height: 12rem; /* Mantiene la proporción de la imagen */
+    width: 10rem; /* Hace que la imagen ocupe el 100% del ancho del contenedor */
+    height: 10rem; /* Mantiene la proporción de la imagen */
     display: block; /* Elimina el espacio adicional debajo de la imagen */
     margin: 0 auto; /* Centra la imagen horizontalmente */
   }
@@ -48,31 +53,44 @@
     /* Estilos específicos para pantallas pequeñas */
     .contenedor-testimonios {
       display: block;
-      align-items: flex-start;
       text-align: center;
-      padding: 20px;
       font-family: 'Acumin Pro', sans-serif;
       font-weight: 400;
       line-height: 1.5rem;
-      width: 80%;
+      margin: 20px 0; /* En lugar de margin: 20px; */
+      width: 100%; /* En lugar de width: 350px !important; */
     }
     .contenedor-texto-testimonio {
       display: inline;
-      margin-top: 10px; /* Ajusta según sea necesario */
+      margin-top: 10px; 
     }
     .imagen-testimonio{
       border-radius: 50%;
-      width: 250px; /* Hace que la imagen ocupe el 100% del ancho del contenedor */
-      height: 250px; /* Mantiene la proporción de la imagen */
+      width: 80%; /* En lugar de width: 250px; */
+      height: auto; /* Esto mantendrá la proporción de la imagen */
       display: block; /* Elimina el espacio adicional debajo de la imagen */
       margin: 0 auto;
     }
-  }
-  
-  /* Para dispositivos pequeños */
-  @media (max-width: 576px) {
-    .contenedor-testimonios {
-      width: 100%; /* Ancho máximo de cada contenedor */
-      max-width: none; /* Ancho máximo de cada contenedor */
+    .col-lg-3 {
+      display: inline-block; /* Hace que las columnas se comporten como elementos en línea */
+      float: none; /* Anula el flotado de las columnas */
+      vertical-align: top; /* Alinea las columnas en la parte superior */
     }
   }
+  
+ 
+  @keyframes slideInFromLeft {
+    0% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  .tu-clase-de-animacion {
+    animation: slideInFromLeft 0.5s ease;
+  }
+  

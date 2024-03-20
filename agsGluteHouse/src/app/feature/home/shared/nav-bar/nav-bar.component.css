@@ -12,7 +12,7 @@
 }
 .dropdown-item:hover{
 	background-color: var(--color-principal);
-	color:black!important;
+	color:white!important;
 }
 .nav-bar-logo{
 	width:10rem; 
@@ -22,5 +22,40 @@
 .dropdown-menu-custom {
 	width: 100%; /* Establece el ancho del menú desplegable al 100% */
 	margin-top: 0; /* Ajusta el margen superior según sea necesario */
+	margin-left: 10px!important;
+	background-color: rgba(0, 0, 0, 0.5)!important; /* Fondo con opacidad */
+  }
+.margen-izquierdo {
+    margin-left: 20px; /* Ajusta el valor según sea necesario */
+}
+  @media only screen and (max-width: 768px) {
+	.nav-bar-logo{
+		width:3rem; 
+		height:3rem;
+		border-radius:50%
+	}
+  }
+/*Boton del menu hamburguesa*/
+/* Estilos para el botón del menú hamburguesa */
+.navbar-toggler {
+	border: none; /* Quita el borde */
+	padding: 0.25rem 0.5rem; /* Ajusta el relleno */
+	font-size: 0.875rem; /* Ajusta el tamaño de la fuente */
+	color: white; /* Color del icono */
+	background-color: transparent; /* Fondo transparente */
+	border-radius: 4px; /* Agrega bordes redondeados */
+	outline: none; /* Quita el contorno al hacer clic */
+	margin-right: 20px;
   }
   
+  /* Estilos para el icono del menú hamburguesa */
+  .navbar-toggler-icon {
+	background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(255,255,255,0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+	width: 1.5em; /* Ajusta el tamaño del icono */
+	height: 1.5em; /* Ajusta el tamaño del icono */
+  }
+  
+  /* Cambia el color del icono al hacer hover */
+  .navbar-toggler:hover .navbar-toggler-icon {
+	stroke: white;
+  }
